@@ -118,6 +118,88 @@
     gap:12px;
     margin-top:60px;
 }
+.exp-card{
+    border:1px solid #e5e7eb;
+    border-radius:24px;
+    overflow:hidden;
+    margin-top:2rem;
+}
+
+.exp-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:24px 32px;
+    cursor:pointer;
+}
+
+.exp-left{
+    display:flex;
+    gap:16px;
+    align-items:center;
+}
+
+.exp-left i{
+    font-size:28px;
+}
+
+.exp-left h3{
+    font-size:28px;
+    font-weight:700;
+}
+
+.exp-left span{
+    color:#9ca3af;
+}
+
+.exp-right{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    color:#9ca3af;
+}
+
+.exp-content{
+    max-height:0;
+    overflow:hidden;
+    transition:all .4s ease;
+    padding:0 32px;
+}
+
+.exp-card.active .exp-content{
+    max-height:400px;
+    padding:24px 32px;
+}
+
+.exp-card.active .exp-toggle{
+    transform:rotate(180deg);
+}
+
+.exp-content ul{
+    list-style:none;
+}
+
+.exp-content li{
+    margin-bottom:14px;
+}
+
+.exp-content li::before{
+    content:"✓";
+    margin-right:12px;
+}
+
+.certificate-btn{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:20px;
+    padding:12px 24px;
+    border:1px solid black;
+    border-radius:999px;
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+}
 
 
 

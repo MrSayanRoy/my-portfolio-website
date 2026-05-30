@@ -91,3 +91,7 @@
                 header.classList.remove('h-20');
             }
         });
+        
+        document.querySelector('.exp-header').addEventListener('click', () => {
+        document.querySelector('.exp-card').classList.toggle('active');
+        });
