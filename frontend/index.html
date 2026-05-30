@@ -3,6 +3,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Sayan Roy | Full Stack Developer &amp; Creative Problem Solver</title>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Geist:wght@400;500;600;700;800&amp;family=Playfair+Display:ital,wght@1,400..700&amp;display=swap" rel="stylesheet"/>
@@ -92,11 +93,11 @@
             "fontSize": {
                     "headline-lg-mobile": ["36px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "600"}],
                     "body-lg": ["22px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
-                    "display-xl": ["110px", {"lineHeight": "1.0", "letterSpacing": "-0.05em", "fontWeight": "700"}],
+                    "display-xl": ["90px", {"lineHeight": "1.0", "letterSpacing": "-0.05em", "fontWeight": "700"}],
                     "headline-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "600"}],
                     "body-md": ["17px", {"lineHeight": "1.6", "letterSpacing": "0.01em", "fontWeight": "400"}],
                     "label-caps": ["13px", {"lineHeight": "1.0", "letterSpacing": "0.25em", "fontWeight": "600"}],
-                    "display-xl-mobile": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}]
+                    "display-xl-mobile": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.03em", "fontWeight": "700"}]
             }
           },
         },
@@ -146,7 +147,7 @@
 </div>
 <main class="pt-0">
 <!-- Hero Section -->
-<section class="min-h-screen flex flex-col justify-center items-center text-center px-8 relative">
+<section class="min-h-[80vh] flex flex-col justify-center items-center text-center px-8 relative">
 <div class="max-w-6xl">
 <div class="mask-reveal active mb-8">
 </div>
@@ -168,38 +169,182 @@
 </section>
 <!-- About Section -->
 <!-- Education & Experience -->
-<section class="max-w-container-max mx-auto px-8 md:px-16 py-20" id="about">
-<div class="mb-16 mask-reveal">
-<h2 class="font-label-caps text-label-caps text-secondary uppercase tracking-[0.25em]">About Me</h2>
+<section id="about" class="max-w-7xl mx-auto px-8 md:px-16 pt-24 pb-20">
+    <!-- Top Bar -->
+    <div class="flex justify-between items-center border-b border-gray-300 pb-4 mb-10">
+        <span class="uppercase tracking-[0.3em] text-gray-500 text-xs">
+            About
+        </span>
+        <span class="text-gray-500 text-xs">
+            02
+        </span>
+    </div>
+    <!-- Title -->
+    <div class="mb-12">
+        <h3 class="mask-reveal active font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary mb-12">
+                    Full Stack <br/>
+    <span class="italic font-light text-subtle-gray opacity-60">
+        Developer
+    </span>
+</h3>
+    </div>
+    <!-- Content -->
+    <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <!-- Left Image -->
+        <div>
+            <img
+                src="images/profile.jpg"
+                alt="Sayan Roy"
+                class="w-full rounded-2xl object-cover shadow-lg"
+            >
+        </div>
+        <!-- Right Content -->
+        <div>
+
+            <!-- Stats -->
+            <div class="flex gap-10 border-b border-gray-300 pb-6 mb-8">
+
+                <div>
+                    <h4 class="text-4xl font-bold">1+</h4>
+                    <p class="text-gray-500 text-sm">Years Experience</p>
+                </div>
+
+                <div>
+                    <h4 class="text-4xl font-bold">4+</h4>
+                    <p class="text-gray-500 text-sm">Projects Built</p>
+                </div>
+
+                <div>
+                    <h4 class="text-4xl font-bold">2+</h4>
+                    <p class="text-gray-500 text-sm">Internships</p>
+                </div>
+            </div>
+            <!-- About Text -->
+            <p class="text-gray-600 leading-relaxed mb-8">
+                I'm Sayan Roy, a Full Stack Developer passionate about building
+                modern web applications and solving real-world problems through
+                technology. Currently pursuing B.Tech in Computer Science at
+                Techno India University, I enjoy creating responsive,
+                user-friendly applications with clean and efficient code.
+            </p>
+            <!-- Traits -->
+<div class="space-y-4 mb-8">
+    <!-- Problem Solving -->
+   <div class="flex items-start gap-3">
+    <i class="bx bx-bulb text-2xl"></i>
+
+    <div>
+        <h4 class="font-semibold">Problem Solving</h4>
+        <p class="text-xs text-gray-500">
+            Building practical solutions
+        </p>
+    </div>
 </div>
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-<div class="reveal">
-<div class="relative group">
-<div class="absolute -inset-4 bg-primary-fixed opacity-10 rounded-3xl blur-2xl transition duration-700 group-hover:opacity-20"></div>
-<div class="relative rounded-2xl overflow-hidden shadow-xl">
-<img alt="Sayan Roy Portrait" class="w-full object-cover aspect-[4/4] transform group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdHLKd3zxGJrNfTUBHMl68WfhQ6WmQrzo0jWIpvVkra12ptsdYIdFULzHAUUqjdeKgd_ZpwMFNLvVsO_U1oh75Pe1xj0GdqS2ILwN5ORcR_TdaCTpn4_iQRQhSq59zCZdSCjq-E1dl_vK2GahPXJa_4jBwUv-mDCcGm0AjCv1lEpwY49zoiMKJgyzCWtKFJV3LJxhrFiAAcVdFrt0EuWz6nsHiBtf1-e57sMZ3jgHwgqCDERzKOgkha5rGrIR3ShqBx30vI__XBxg"/>
+    <!-- Teamwork -->
+    <div class="flex items-start gap-3">
+        <i class="bx bx-group text-2xl text-black"></i>
+        <div>
+            <h5 class="font-semibold">Teamwork</h5>
+            <p class="text-xs text-gray-500">
+                Collaborative mindset
+            </p>
+        </div>
+    </div>
+    <!-- Continuous Learning -->
+    <div class="flex items-start gap-3">
+        <i class="bx bx-book-open text-2xl"></i>
+        <div>
+            <h5 class="font-semibold">Continuous Learning</h5>
+            <p class="text-xs text-gray-500">
+                Always improving
+            </p>
+        </div>
+    </div>
+    <!-- Support -->
+    <div class="flex items-start gap-3">
+        <span class="material-symbols-outlined text-2xl">
+            support_agent
+        </span>
+
+        <div>
+            <h5 class="font-semibold">Support</h5>
+            <p class="text-xs text-gray-500">
+                Always Available
+            </p>
+        </div>
+    </div>
 </div>
+
+           
+<a href="resume.pdf"
+   target="_blank"
+   class="inline-block px-6 py-3 bg-black text-white text-center rounded-full font-medium text-sm hover:bg-gray-800 hover:scale-105 hover:shadow-lg transition-all duration-300">
+    Download CV ↓
+</a>
+        </div>
+
+    </div>
+</section>
+<!-- Skills Section -->
+ <section class="pt-24 pb-12 px-8 md:px-16" id="skills">
+<div class="max-w-container-max mx-auto">
+    <div class="flex justify-between items-center border-b border-gray-300 pb-4 mb-10">
+    <span class="uppercase tracking-[0.3em] text-gray-500 text-xs">
+        Skills
+    </span>
+    <span class="text-gray-500 text-xs">
+        03
+    </span>
 </div>
+<div class="mb-12 text-left">
+    <h3 class="mask-reveal active font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-primary">
+        Capabilities & <br/>
+        <span class="italic font-light text-subtle-gray opacity-60">
+            Tech Stack
+        </span>
+    </h3>
 </div>
-<div class="space-y-10">
-<div class="mask-reveal">
-<h3 class="font-headline-lg text-headline-lg text-primary">Crafting Digital Excellence with Precision.</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Languages -->
+<div class="reveal glass-card p-12 rounded-[32px] group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">code</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Languages</h4>
+<ul class="space-y-5">
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> C/C++</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Java</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Python</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> JavaScript</li>
+</ul>
 </div>
-<p class="reveal font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
-        I specialize in building digital experiences that marry sophisticated UI/UX with high-performance backend architecture. My approach is rooted in minimalist design principles and technical precision.
-      </p>
-<p class="reveal font-body-md text-body-md text-subtle-gray">
-        Beyond the IDE, I'm a football enthusiast who finds rhythm on the pitch, bringing that same teamwork and competitive spirit to my development projects. I am currently pursuing my B.Tech in Computer Science at Techno India University.
-      </p>
-<div class="reveal flex gap-20 pt-8 border-t border-glass-border/30">
-<div>
-<div class="text-[48px] font-bold text-primary tracking-tighter">2+</div>
-<div class="font-label-caps text-label-caps text-subtle-gray uppercase mt-2">Projects Delivered</div>
+<!-- Frontend -->
+<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 100ms;">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">window</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Frontend</h4>
+<ul class="space-y-5">
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> HTML/CSS</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tailwind CSS</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> React.js</li>
+</ul>
 </div>
-<div>
-<div class="text-[48px] font-bold text-primary tracking-tighter">2023</div>
-<div class="font-label-caps text-label-caps text-subtle-gray uppercase mt-2">Journey Started</div>
+<!-- Backend -->
+<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 200ms;">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">database</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Backend</h4>
+<ul class="space-y-5">
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Node.js</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Express.js</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> MongoDB</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Firebase</li>
+</ul>
 </div>
+<!-- Tools -->
+<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 300ms;">
+<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">build</span>
+<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Tools</h4>
+<ul class="space-y-5">
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Git &amp; GitHub</li>
+<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> VS Code</li>
+</ul>
 </div>
 </div>
 </div>
@@ -241,57 +386,6 @@
                                 Focused on AI integrations and collaborative development practices during an intensive virtual program.
                             </p>
 </div>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills Section -->
-<section class="py-section-gap px-8 md:px-16" id="skills">
-<div class="max-w-container-max mx-auto">
-<div class="text-center mb-32">
-<div class="mask-reveal"><h2 class="font-label-caps text-label-caps text-secondary mb-6 uppercase">Tech Stack</h2></div>
-<div class="mask-reveal"><h3 class="font-headline-lg text-headline-lg text-primary">Tools &amp; Technologies</h3></div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Languages -->
-<div class="reveal glass-card p-12 rounded-[32px] group">
-<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">code</span>
-<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Languages</h4>
-<ul class="space-y-5">
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Java</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Python</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> JavaScript</li>
-</ul>
-</div>
-<!-- Frontend -->
-<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 100ms;">
-<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">window</span>
-<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Frontend</h4>
-<ul class="space-y-5">
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> React.js</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Tailwind CSS</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> HTML/CSS</li>
-</ul>
-</div>
-<!-- Backend -->
-<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 200ms;">
-<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">database</span>
-<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Backend</h4>
-<ul class="space-y-5">
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Node.js</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Express</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> MongoDB</li>
-</ul>
-</div>
-<!-- Tools -->
-<div class="reveal glass-card p-12 rounded-[32px] group" style="transition-delay: 300ms;">
-<span class="material-symbols-outlined text-secondary text-5xl mb-8 group-hover:rotate-12 transition-transform">build</span>
-<h4 class="font-headline-lg-mobile text-headline-lg-mobile text-primary mb-8">Tools</h4>
-<ul class="space-y-5">
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Git &amp; GitHub</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> VS Code</li>
-<li class="flex items-center gap-4 text-body-md"><span class="w-2 h-2 rounded-full bg-secondary"></span> Figma</li>
-</ul>
 </div>
 </div>
 </div>
