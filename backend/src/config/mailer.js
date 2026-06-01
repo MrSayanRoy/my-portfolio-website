@@ -27,6 +27,7 @@ function getTransporter() {
  */
 async function sendContactEmail({ name, email, message }) {
   const transport = getTransporter();
+  await transport.verify();
 
   // 1. Email to Sayan with the visitor's message
   const toOwner = {
