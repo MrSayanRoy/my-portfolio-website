@@ -92,6 +92,50 @@
             }
         });
         
-        document.querySelector('.exp-header').addEventListener('click', () => {
-        document.querySelector('.exp-card').classList.toggle('active');
-        });
+        const expHeader = document.querySelector('.exp-header');
+const expCard = document.querySelector('.exp-card');
+
+if (expHeader && expCard) {
+    expHeader.addEventListener('click', () => {
+        expCard.classList.toggle('active');
+    });
+   };
+const contactForm = document.getElementById("contact-form");
+console.log("Contact form found:", contactForm);
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const data = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            message: document.getElementById("message").value
+        };
+
+        try {
+            const response = await fetch(
+                "https://my-portfolio-website-2kw6.onrender.com/api/contact",
+                {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(data)
+                }
+            );
+
+            const result = await response.json();
+
+            if (response.ok) {
+                alert("Message sent successfully!");
+                contactForm.reset();
+            } else {
+                alert(result.message || "Failed to send message.");
+            }
+        } catch (error) {
+            console.error(error);
+            alert("Something went wrong.");
+        }
+    });
+}
