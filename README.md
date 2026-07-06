@@ -11,5 +11,5 @@ planning on doing it after my sem exams
 <br>
 planning on doing it after my sem exams
 <br>
-planning on doing i nno gnh  nbfd
+planning on doing i nno 
 
