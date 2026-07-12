@@ -11,5 +11,4 @@ planning on doing it after my sem exams
 <br>
 planning on doing it after my sem exams
 <br>
-planning on doing i n
-
+planning on doing i 
