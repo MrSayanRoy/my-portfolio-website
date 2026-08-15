@@ -1,4 +1,4 @@
-
+    
         // Lenis Smooth Scroll Initialization
         const lenis = new Lenis({
             duration: 1.2,
@@ -79,18 +79,6 @@
         }, observerOptions);
 
         document.querySelectorAll('.reveal, .mask-reveal').forEach(el => observer.observe(el));
-
-        // Header shrinking on scroll
-        const header = document.querySelector('header');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 100) {
-                header.classList.add('h-20');
-                header.classList.remove('h-24');
-            } else {
-                header.classList.add('h-24');
-                header.classList.remove('h-20');
-            }
-        });
         
         const expHeader = document.querySelector('.exp-header');
 const expCard = document.querySelector('.exp-card');
@@ -101,7 +89,6 @@ if (expHeader && expCard) {
     });
    };
 const contactForm = document.getElementById("contact-form");
-console.log("Contact form found:", contactForm);
 
 if (contactForm) {
     contactForm.addEventListener("submit", async (e) => {
@@ -137,5 +124,24 @@ if (contactForm) {
             console.error(error);
             alert("Something went wrong.");
         }
+
     });
+}
+// Mobile Menu
+const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenuLinks = document.querySelectorAll(".mobile-menu-link");
+
+if (mobileMenuBtn && mobileMenu) {
+
+    mobileMenuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+
+    mobileMenuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.add("hidden");
+        });
+    });
+
 }
