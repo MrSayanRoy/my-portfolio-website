@@ -1,4 +1,4 @@
-
+const { validationResult } = require("express-validator");
 const { sendContactEmail } = require("../config/mailer");
 
 async function handleContact(req, res) {
