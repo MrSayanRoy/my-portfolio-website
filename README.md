@@ -1,5 +1,4 @@
 <div align="center">
-
 # 💻 Sayan Roy — Personal Portfolio
 
 ### A modern full-stack developer portfolio built to showcase my skills, projects, experience, and journey.
