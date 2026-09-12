@@ -157,6 +157,7 @@
     align-items:center;
     gap:16px;
     color:#9ca3af;
+    white-space:nowrap;
 }
 
 .exp-content{
