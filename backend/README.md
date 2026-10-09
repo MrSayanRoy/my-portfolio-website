@@ -79,7 +79,6 @@ curl -X POST http://localhost:5000/api/contact \
   -H "Content-Type: application/json" \
   -d '{"name":"Alice","email":"alice@example.com","message":"Hi Sayan, great portfolio!"}'
 ```
-
 ### Projects
 ```bash
 curl http://localhost:5000/api/projects
